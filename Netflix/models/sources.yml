@@ -1,0 +1,9 @@
+version: 2
+
+# We use sources for raw data to have more control over where data comes from and how fresh it is.
+sources:
+  - name: netflix
+    schema: raw
+    tables:
+      - name: r_movies
+        identifier: raw_movies

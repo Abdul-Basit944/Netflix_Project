@@ -1,0 +1,21 @@
+models:
+  - name: dim_movies
+    description: "dimension table for movies"
+    columns:
+      - name: movie_id
+        description: "unique identifier for each movie"
+        tests:
+          - not_null
+
+      - name: movie_title
+        description: "title of the movie"
+        tests:
+          - not_null
+
+      - name: genre_array
+        description: "list of genres for the movie"
+
+      - name: genres
+        description: "genre of the movie"
+        tests:
+          - not_null
